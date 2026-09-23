@@ -1,8 +1,10 @@
 pub mod initialize;
 pub mod transfer;
 pub mod initialize_v2;
+pub mod confidential_transfer;
 pub mod unfreeze;
 pub use initialize::*;
 pub use transfer::*;
 pub use unfreeze::*;
 pub use initialize_v2::*;
+pub use confidential_transfer::*;

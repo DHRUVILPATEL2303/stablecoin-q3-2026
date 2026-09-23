@@ -26,4 +26,8 @@ pub mod stablecoin_q3_2026 {
     pub fn unfreeze(ctx: Context<UnfreezeKycAccount>) -> Result<()> {
         ctx.accounts.unfreeze()
     }
+
+    pub fn initalize_v2(ctx: Context<InitalizeMintV2>) -> Result<()> {
+        ctx.accounts.initialize()
+    }
 }
