@@ -21,6 +21,7 @@ pub struct TransferWithFees<'info> {
     /// CHECK : token accounts and will be validated by token_program
     pub to: UncheckedAccount<'info>,
 
+    /// CHECK : mint account
     pub mint: UncheckedAccount<'info>,
 
     pub token_program: Interface<'info, TokenInterface>,
