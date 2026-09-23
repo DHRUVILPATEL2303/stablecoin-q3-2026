@@ -15,8 +15,8 @@ declare_id!("GyS3h3kXEHADYhzHXR2r9VBMYejFNeGwg7Ln66v2bqo5");
 pub mod stablecoin_q3_2026 {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        crate::instructions::initialize::handle_initialize(ctx)
+    pub fn initalize(ctx: Context<InitalizeMint>) -> Result<()> {
+        ctx.accounts.initialize()
     }
 
     pub fn increment(ctx: Context<Increment>) -> Result<()> {
