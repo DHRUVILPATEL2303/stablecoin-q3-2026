@@ -19,7 +19,7 @@ pub mod stablecoin_q3_2026 {
         ctx.accounts.initialize()
     }
 
-    pub fn increment(ctx: Context<Increment>) -> Result<()> {
-        crate::instructions::increment::handle_increment(ctx)
+    pub fn transfer(ctx : Context<TransferWithFees>, amount : u64, decimals : u8) -> Result<()>{
+        ctx.accounts.transfer(amount, decimals)
     }
 }
