@@ -22,4 +22,8 @@ pub mod stablecoin_q3_2026 {
     pub fn transfer(ctx : Context<TransferWithFees>, amount : u64, decimals : u8) -> Result<()>{
         ctx.accounts.transfer(amount, decimals)
     }
+
+    pub fn unfreeze(ctx : Context<UnfreezeKycAccount>)-> Result<()>{
+        ctx.accounts.unfreeze()
+    }
 }
